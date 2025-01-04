@@ -9,40 +9,52 @@
 <body>
 
     <div class="left-side">
-        <div class="logo-container"></div>
-        <div class="footer"></div>
+        <div class="logo-container"><img src="./Assets/odin-lined.png" alt="odin logo">ODIN</div>
+        <div class="credits">
+            <p>Photo by <a href="https://unsplash.com/it/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/it">Unsplash</a></p>
+        </div>
     </div>
     <div class="right-side">
+
+        <p class="starter-msg">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
+
+        <p class="starter-msg">You <em>know</em> you want to.</p>
         
-        <form action="" method="get" class="action-form">
+        <form action="#" method="get" class="action-form">
 
-            <h2 class="form-title">Let's do this!</h2>
+            <div class="input-zone">
+                <h2 class="form-title">Let's do this!</h2>
 
-            <div class="form-row">
-                <label for="fName">FIRST NAME</label>
-                <input type="text" id="fName" name="fName">
-                <label for="lName">LAST NAME</label>
-                <input type="text" id="lName" name="lName">
+                <fieldset>
+
+                    <div class="form-column">
+                        <label for="fName">FIRST NAME</label>
+                        <input type="text" id="fName" name="fName" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+    
+                    <div class="form-column">
+                        <label for="lName">LAST NAME</label>
+                        <input type="text" id="lName" name="lName" required>
+                        <label for="pNumber">PHONE NUMBER</label>
+                        <input type="tel" id="pNumber" name="pNumber" required maxlength="14" minlength="10">
+                        <label for="confirmP">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmP" name="confirmP" required>
+                    </div>
+                    
+                </fieldset>
+
+                
             </div>
 
-            <div class="form-row">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
-                <label for="pNumber">PHONE NUMBER</label>
-                <input type="number" id="pNumber" name="pNumber">
-            </div>
-            <div class="form-row">
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password">
-                <label for="confirmP">CONFIRM PASSWORD</label>
-                <input type="password" id="confirmP" name="confirmP">
-            </div>
-
-            <button id="create-acc-btn" class="create-btn" type="submit">Create Account</button>
+            <button id="create-acc-btn" class="create-btn" type="button">Create Account</button>
 
         </form>
 
-        <p>Already Have an account? <a href="#">Log in</a></p>
+        <p class="log-msg">Already Have an account? <a href="#">Log in</a></p>
 
     </div>
     
